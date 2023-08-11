@@ -60,15 +60,15 @@ body {
 }
 
 .key.wrong-location {
-  --hue: 49;
-  --saturation: 51%;
-  --lightness: 47%;
+  --hue: 30;
+  --saturation: 100%;
+  --lightness: 50%;
 }
 
 .key.correct {
-  --hue: 115;
-  --saturation: 29%;
-  --lightness: 43%;
+  --hue: 270;
+  --saturation: 100%;
+  --lightness: 50%;
 }
 
 .guess-grid {

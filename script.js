@@ -8020,7 +8020,7 @@ const DANCE_ANIMATION_DURATION = 500
 const keyboard = document.querySelector("[data-keyboard]")
 const alertContainer = document.querySelector("[data-alert-container]")
 const guessGrid = document.querySelector("[data-guess-grid]")
-const offsetFromDate = new Date(2023, 8, 1 )
+const offsetFromDate = new Date(2023, 7, 1)
 const msOffset = Date.now() - offsetFromDate
 const dayOffset = msOffset / 1000 / 60 / 60 / 24
 const targetWord = targetWords[Math.floor(dayOffset)]
@@ -8092,7 +8092,7 @@ function deleteKey() {
 function submitGuess() {
   const activeTiles = [...getActiveTiles()]
   if (activeTiles.length !== WORD_LENGTH) {
-    showAlert("Pas assez de lettres")
+    showAlert("Not enough letters")
     shakeTiles(activeTiles)
     return
   }
@@ -8102,7 +8102,7 @@ function submitGuess() {
   }, "")
 
   if (!dictionary.includes(guess)) {
-    showAlert("Pas dans le dictionnaire")
+    showAlert("Not in word list")
     shakeTiles(activeTiles)
     return
   }
@@ -8182,7 +8182,7 @@ function shakeTiles(tiles) {
 
 function checkWinLose(guess, tiles) {
   if (guess === targetWord) {
-    showAlert("Gagné !", 5000)
+    showAlert("You Win", 5000)
     danceTiles(tiles)
     stopInteraction()
     return

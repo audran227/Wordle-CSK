@@ -14,6 +14,8 @@ const targetWords = [
   "conso",
   "rocky",
   "ultra",
+  "conso",
+  "utile",
 ]
 const dictionary = [
   "raout",

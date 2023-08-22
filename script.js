@@ -1,7 +1,7 @@
 const targetWords = [
   "cergy",
   "vodka",
-  "ordis",
+  "rocky",
   "shots",
   "cafet",
   "charo",
@@ -64,7 +64,7 @@ const targetWords = [
 const dictionary = [
   "cergy",
   "vodka",
-  "ordis",
+  "rocky",
   "shots",
   "cafet",
   "charo",
